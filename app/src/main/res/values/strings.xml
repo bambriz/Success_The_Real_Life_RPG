@@ -5,7 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="Start">Start</string>
-    <string name="title_activity_get_name">getName</string>
+    <string name="title_activity_get_name">Enter Credentials</string>
     <string name="NameHint">Name</string>
     <string name="DOB">Date of birth</string>
     <string name="title_activity_set_accomplishments">Set Accomplishments</string>

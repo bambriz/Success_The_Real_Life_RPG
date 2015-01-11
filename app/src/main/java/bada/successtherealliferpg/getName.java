@@ -52,7 +52,7 @@ public class getName extends ActionBarActivity {
         String date = etDate.getText().toString();
         setAintent.putExtra(EXTRA_NAME, name);
         setAintent.putExtra(EXTRA_DATE, date);
-        if (name != ""&& date != "" && name != "Name" && date != "Date of birth") {
+        if (!name.equals("") && !date.equals("") && !name.equals("Name") && !date.equals("Date of birth")) {
             startActivity(setAintent); //j
         }
     }
