@@ -53,7 +53,7 @@ public class getName extends ActionBarActivity {
         setAintent.putExtra(EXTRA_NAME, name);
         setAintent.putExtra(EXTRA_DATE, date);
         if (name != ""&& date != "" && name != "Name" && date != "Date of birth") {
-            startActivity(setAintent);
+            startActivity(setAintent); //j
         }
     }
 }
