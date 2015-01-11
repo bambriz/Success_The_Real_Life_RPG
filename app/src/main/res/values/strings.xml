@@ -14,5 +14,10 @@
     <string name="title_activity_quiz_one">Question 1</string>
     <string name="title_activity_quiz_two">Question 2</string>
     <string name="title_activity_quiz_three">Question 3</string>
+    <string name="title_activity_quiz_four">Question 4</string>
+    <string name="title_activity_quiz_five">Question 5</string>
+    <string name="title_activity_quiz_six">Question 6</string>
+    <string name="title_activity_quiz_seven">Question 7</string>
+    <string name="title_activity_quiz_eight">Question 8</string>
 
 </resources>

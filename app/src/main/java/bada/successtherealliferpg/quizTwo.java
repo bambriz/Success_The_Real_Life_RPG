@@ -40,7 +40,7 @@ public class quizTwo extends ActionBarActivity {
       //  String dDis = " DOB: "+ d;
        // int a = saveData.getInt("charisma",69);
        // String aS = String.valueOf(a);
-       ;
+
 
     }
 

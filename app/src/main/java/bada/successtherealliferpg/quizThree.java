@@ -1,9 +1,11 @@
 package bada.successtherealliferpg;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class quizThree extends ActionBarActivity {
@@ -42,5 +44,105 @@ public class quizThree extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void aClick(View view){
+        Intent intent = getIntent();
+        Intent qThree = new Intent(this,quizFour.class);
+        int s;
+
+        String st = intent.getStringExtra(quizThree.EXTRA_STR);
+        String name = intent.getStringExtra(quizThree.EXTRA_NAME);
+        String date = intent.getStringExtra(quizThree.EXTRA_DATE);
+        String cha = intent.getStringExtra(quizThree.EXTRA_cha);
+        String inte = intent.getStringExtra(quizThree.EXTRA_inte);
+        String wil = intent.getStringExtra(quizThree.EXTRA_wil);
+        s = Integer.parseInt(st);
+
+        s+= 4;
+        st = String.valueOf(s);
+        qThree.putExtra(EXTRA_NAME,name);
+        qThree.putExtra(EXTRA_DATE,date);
+        qThree.putExtra(EXTRA_cha,cha);
+        qThree.putExtra(EXTRA_STR,st);
+        qThree.putExtra(EXTRA_inte,inte);
+        qThree.putExtra(EXTRA_wil,wil);
+        //go to next question
+        startActivity(qThree);
+    }
+
+    public void bClick(View view){
+        Intent intent = getIntent();
+        Intent qThree = new Intent(this,quizFour.class);
+        int s;
+
+        String st = intent.getStringExtra(quizThree.EXTRA_STR);
+        String name = intent.getStringExtra(quizThree.EXTRA_NAME);
+        String date = intent.getStringExtra(quizThree.EXTRA_DATE);
+        String cha = intent.getStringExtra(quizThree.EXTRA_cha);
+        String inte = intent.getStringExtra(quizThree.EXTRA_inte);
+        String wil = intent.getStringExtra(quizThree.EXTRA_wil);
+        s = Integer.parseInt(inte);
+
+        s+= 4;
+        st = String.valueOf(s);
+        qThree.putExtra(EXTRA_NAME,name);
+        qThree.putExtra(EXTRA_DATE,date);
+        qThree.putExtra(EXTRA_cha,cha);
+        qThree.putExtra(EXTRA_STR,st);
+        qThree.putExtra(EXTRA_inte,inte);
+        qThree.putExtra(EXTRA_wil,wil);
+        //go to next question
+        startActivity(qThree);
+    }
+
+    public void cClick(View view){
+        Intent intent = getIntent();
+        Intent qThree = new Intent(this,quizFour.class);
+        int s;
+
+        String st = intent.getStringExtra(quizThree.EXTRA_STR);
+        String name = intent.getStringExtra(quizThree.EXTRA_NAME);
+        String date = intent.getStringExtra(quizThree.EXTRA_DATE);
+        String cha = intent.getStringExtra(quizThree.EXTRA_cha);
+        String inte = intent.getStringExtra(quizThree.EXTRA_inte);
+        String wil = intent.getStringExtra(quizThree.EXTRA_wil);
+        s = Integer.parseInt(wil);
+
+        s+= 4;
+        st = String.valueOf(s);
+        qThree.putExtra(EXTRA_NAME,name);
+        qThree.putExtra(EXTRA_DATE,date);
+        qThree.putExtra(EXTRA_cha,cha);
+        qThree.putExtra(EXTRA_STR,st);
+        qThree.putExtra(EXTRA_inte,inte);
+        qThree.putExtra(EXTRA_wil,wil);
+        //go to next question
+        startActivity(qThree);
+    }
+
+    public void dClick(View view){
+        Intent intent = getIntent();
+        Intent qThree = new Intent(this,quizFour.class);
+        int s;
+
+        String st = intent.getStringExtra(quizThree.EXTRA_STR);
+        String name = intent.getStringExtra(quizThree.EXTRA_NAME);
+        String date = intent.getStringExtra(quizThree.EXTRA_DATE);
+        String cha = intent.getStringExtra(quizThree.EXTRA_cha);
+        String inte = intent.getStringExtra(quizThree.EXTRA_inte);
+        String wil = intent.getStringExtra(quizThree.EXTRA_wil);
+        s = Integer.parseInt(cha);
+
+        s+= 4;
+        st = String.valueOf(s);
+        qThree.putExtra(EXTRA_NAME,name);
+        qThree.putExtra(EXTRA_DATE,date);
+        qThree.putExtra(EXTRA_cha,cha);
+        qThree.putExtra(EXTRA_STR,st);
+        qThree.putExtra(EXTRA_inte,inte);
+        qThree.putExtra(EXTRA_wil,wil);
+        //go to next question
+        startActivity(qThree);
     }
 }

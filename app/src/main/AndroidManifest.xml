@@ -65,6 +65,26 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="bada.successtherealliferpg.quizTwo" />
         </activity>
+        <activity
+            android:name=".quizFour"
+            android:label="@string/title_activity_quiz_four" >
+        </activity>
+        <activity
+            android:name=".quizFive"
+            android:label="@string/title_activity_quiz_five" >
+        </activity>
+        <activity
+            android:name=".quizSix"
+            android:label="@string/title_activity_quiz_six" >
+        </activity>
+        <activity
+            android:name=".quizSeven"
+            android:label="@string/title_activity_quiz_seven" >
+        </activity>
+        <activity
+            android:name=".quizEight"
+            android:label="@string/title_activity_quiz_eight" >
+        </activity>
     </application>
 
 </manifest>
