@@ -57,6 +57,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="bada.successtherealliferpg.quizOne" />
         </activity>
+        <activity
+            android:name=".quizThree"
+            android:label="@string/title_activity_quiz_three"
+            android:parentActivityName=".quizTwo" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bada.successtherealliferpg.quizTwo" />
+        </activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package bada.successtherealliferpg;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
@@ -8,12 +9,32 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
 
 public class instructions extends ActionBarActivity {
+
+    public final static String EXTRA_NAME = "com.bada.successtherealliferpg.name";
+    public final static String EXTRA_DATE = "com.bada.successtherealliferpg.date";
+    public final static String EXTRA_STR = "com.bada.successtherealliferpg.str";
+    public final static String EXTRA_cha = "com.bada.successtherealliferpg.cha";
+    public final static String EXTRA_inte = "com.bada.successtherealliferpg.inte";
+    public final static String EXTRA_wil = "com.bada.successtherealliferpg.wil";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent intent = getIntent();
+        String name = intent.getStringExtra(getName.EXTRA_NAME);
+        String date = intent.getStringExtra(getName.EXTRA_DATE);
+        SharedPreferences profData = getPreferences(MODE_WORLD_READABLE);
+        SharedPreferences.Editor editor = profData.edit();
+        editor.putString("profName", name).commit();
+        editor.putString("profDate", date).commit();
         setContentView(R.layout.activity_instructions);
     }
 
@@ -44,11 +65,18 @@ public class instructions extends ActionBarActivity {
         Intent quiz = new Intent(this, quizOne.class);
         String name = intent.getStringExtra(getName.EXTRA_NAME);
         String date = intent.getStringExtra(getName.EXTRA_DATE);
-        SharedPreferences profData = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor editor = profData.edit();
+       // SharedPreferences profData = getPreferences(MODE_WORLD_READABLE);
+       // SharedPreferences.Editor editor = profData.edit();
         int str,cha,inte,wil;
         str = cha = inte = wil = 10;
-        editor.putString("profName", name);
+        quiz.putExtra(EXTRA_NAME,name);
+        quiz.putExtra(EXTRA_DATE,date);
+        quiz.putExtra(EXTRA_cha,String.valueOf(cha));
+        quiz.putExtra(EXTRA_STR,String.valueOf(str));
+        quiz.putExtra(EXTRA_inte,String.valueOf(inte));
+        quiz.putExtra(EXTRA_wil,String.valueOf(wil));
+
+       /* editor.putString("profName", name);
         editor.commit();
         editor.putString("profDate", date);
         editor.commit();
@@ -61,7 +89,7 @@ public class instructions extends ActionBarActivity {
         editor.apply();
         editor.putInt("willpower",wil);
         editor.apply();
-
+   */
         //commit data
 
         // pernamently save name and date

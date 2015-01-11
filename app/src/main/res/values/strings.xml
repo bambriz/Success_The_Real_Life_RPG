@@ -13,5 +13,6 @@
     <string name="instrubut">Ok</string>
     <string name="title_activity_quiz_one">Question 1</string>
     <string name="title_activity_quiz_two">Question 2</string>
+    <string name="title_activity_quiz_three">Question 3</string>
 
 </resources>
