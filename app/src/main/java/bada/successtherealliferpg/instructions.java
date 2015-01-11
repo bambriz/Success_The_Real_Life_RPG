@@ -48,16 +48,27 @@ public class instructions extends ActionBarActivity {
         SharedPreferences.Editor editor = profData.edit();
         int str,cha,inte,wil;
         str = cha = inte = wil = 10;
-        editor.putInt("health",str);
-        editor.putInt("intelligence",inte);
-        editor.putInt("charisma",cha);
-        editor.putInt("willpower",wil);
         editor.putString("profName", name);
-        editor.putString("profDate", date);
-        //commit data
         editor.commit();
+        editor.putString("profDate", date);
+        editor.commit();
+       // profData.onSharedPreferenceChanged(profData, "profName");
+        editor.putInt("health",str);
+        editor.commit();
+        editor.putInt("intelligence",inte);
+        editor.commit();
+        editor.putInt("charisma",cha);
+        editor.apply();
+        editor.putInt("willpower",wil);
+        editor.apply();
+
+        //commit data
+
         // pernamently save name and date
         startActivity(quiz);
 
     }
+
+
+
 }

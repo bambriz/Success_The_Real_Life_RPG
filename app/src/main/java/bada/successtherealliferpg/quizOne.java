@@ -10,7 +10,7 @@ import android.view.View;
 
 
 public class quizOne extends ActionBarActivity {
-    Intent qTwo = new Intent(this,quizTwo.class);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +41,7 @@ public class quizOne extends ActionBarActivity {
     }
     public void aClick(View view){
         //save health attribute bonus +4
+        Intent qTwo = new Intent(this,quizTwo.class);
         int s;//c,i,w;
         SharedPreferences saveData = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor editor = saveData.edit();
@@ -58,6 +59,7 @@ public class quizOne extends ActionBarActivity {
 
     }
     public void bClick(View view){
+        Intent qTwo = new Intent(this,quizTwo.class);
         SharedPreferences saveData = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor editor = saveData.edit();
         int  i = saveData.getInt("intelligence",10);
@@ -70,22 +72,24 @@ public class quizOne extends ActionBarActivity {
     }
 
     public void cClick(View view){
+        Intent qTwo = new Intent(this,quizTwo.class);
         SharedPreferences saveData = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor editor = saveData.edit();
         int  w = saveData.getInt("willpower",10);
         w+= 4;
-        editor.putInt("willpower",i);
+        editor.putInt("willpower",w);
         //commit attrivute update
         editor.commit();
         //go to next question
         startActivity(qTwo);
     }
     public void dClick(View view){
+        Intent qTwo = new Intent(this,quizTwo.class);
         SharedPreferences saveData = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor editor = saveData.edit();
         int  c = saveData.getInt("charisma",10);
         c+= 4;
-        editor.putInt("charisma",i);
+        editor.putInt("charisma",c);
         //commit attrivute update
         editor.commit();
         //go to next question

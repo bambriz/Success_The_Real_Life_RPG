@@ -12,5 +12,6 @@
     <string name="title_activity_instructions">Instructions</string>
     <string name="instrubut">Ok</string>
     <string name="title_activity_quiz_one">Question 1</string>
+    <string name="title_activity_quiz_two">Question 2</string>
 
 </resources>
