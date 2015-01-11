@@ -19,5 +19,8 @@
     <string name="title_activity_quiz_six">Question 6</string>
     <string name="title_activity_quiz_seven">Question 7</string>
     <string name="title_activity_quiz_eight">Question 8</string>
+    <string name="title_activity_quiz_nine">Question 9</string>
+    <string name="title_activity_quiz_ten">Question 10</string>
+    <string name="title_activity_attribute_menu">Attributes</string>
 
 </resources>

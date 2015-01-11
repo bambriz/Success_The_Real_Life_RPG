@@ -4,13 +4,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="bada.successtherealliferpg.quizEight">
+    tools:context="bada.successtherealliferpg.quizNine">
 
     <TextView
-        android:text="You&apos;re at a social gathering. What will you have to drink?"
+        android:text="At a very old age, you envision yourself as:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView7"
+        android:id="@+id/textView8"
         android:textSize="15sp"
         android:textColor="#ffff0002"
         android:layout_marginTop="30dp"
@@ -20,9 +20,9 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A nutritious smoothie."
-        android:id="@+id/q8a"
-        android:layout_below="@+id/textView7"
+        android:text="Having many more years to live."
+        android:id="@+id/q9a"
+        android:layout_below="@+id/textView8"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="55dp"
@@ -32,36 +32,36 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A shot of tequila."
-        android:id="@+id/q8b"
-        android:layout_below="@+id/q8a"
+        android:text="Having a mind with great wisdom."
+        android:id="@+id/q9b"
+        android:layout_below="@+id/q9a"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="55dp"
         android:onClick="bClick"
-        android:textColor="#FF000000" />
+        android:textColor="#ff000000" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A glass of wine."
-        android:id="@+id/q8c"
-        android:layout_below="@+id/q8b"
+        android:text="Having overcome a life of challenges."
+        android:id="@+id/q9c"
+        android:layout_below="@+id/q9b"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="55dp"
         android:onClick="cClick"
-        android:textColor="#FF000000" />
+        android:textColor="#ff000000" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Water."
-        android:id="@+id/q8d"
-        android:layout_below="@+id/q8c"
+        android:text="A person fully capable of giving anyone advice."
+        android:id="@+id/q9d"
+        android:layout_below="@+id/q9c"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="55dp"
         android:onClick="dClick"
-        android:textColor="#FF000000" />
+        android:textColor="#ff000000" />
 </RelativeLayout>

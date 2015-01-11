@@ -85,6 +85,18 @@
             android:name=".quizEight"
             android:label="@string/title_activity_quiz_eight" >
         </activity>
+        <activity
+            android:name=".quizNine"
+            android:label="@string/title_activity_quiz_nine" >
+        </activity>
+        <activity
+            android:name=".quizTen"
+            android:label="@string/title_activity_quiz_ten" >
+        </activity>
+        <activity
+            android:name=".attributeMenu"
+            android:label="@string/title_activity_attribute_menu" >
+        </activity>
     </application>
 
 </manifest>
