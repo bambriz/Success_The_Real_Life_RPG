@@ -51,12 +51,12 @@ public class quizNine extends ActionBarActivity {
         Intent qNine = new Intent(this,quizTen.class);
         int s;
 
-        String st = intent.getStringExtra(quizNine.EXTRA_STR);
-        String name = intent.getStringExtra(quizNine.EXTRA_NAME);
-        String date = intent.getStringExtra(quizNine.EXTRA_DATE);
-        String cha = intent.getStringExtra(quizNine.EXTRA_cha);
-        String inte = intent.getStringExtra(quizNine.EXTRA_inte);
-        String wil = intent.getStringExtra(quizNine.EXTRA_wil);
+        String st = intent.getStringExtra(quizEight.EXTRA_STR);
+        String name = intent.getStringExtra(quizEight.EXTRA_NAME);
+        String date = intent.getStringExtra(quizEight.EXTRA_DATE);
+        String cha = intent.getStringExtra(quizEight.EXTRA_cha);
+        String inte = intent.getStringExtra(quizEight.EXTRA_inte);
+        String wil = intent.getStringExtra(quizEight.EXTRA_wil);
         s = Integer.parseInt(st);
 
         s+= 4;
@@ -76,16 +76,16 @@ public class quizNine extends ActionBarActivity {
         Intent qNine = new Intent(this,quizTen.class);
         int s;
 
-        String st = intent.getStringExtra(quizNine.EXTRA_STR);
-        String name = intent.getStringExtra(quizNine.EXTRA_NAME);
-        String date = intent.getStringExtra(quizNine.EXTRA_DATE);
-        String cha = intent.getStringExtra(quizNine.EXTRA_cha);
-        String inte = intent.getStringExtra(quizNine.EXTRA_inte);
-        String wil = intent.getStringExtra(quizNine.EXTRA_wil);
+        String st = intent.getStringExtra(quizEight.EXTRA_STR);
+        String name = intent.getStringExtra(quizEight.EXTRA_NAME);
+        String date = intent.getStringExtra(quizEight.EXTRA_DATE);
+        String cha = intent.getStringExtra(quizEight.EXTRA_cha);
+        String inte = intent.getStringExtra(quizEight.EXTRA_inte);
+        String wil = intent.getStringExtra(quizEight.EXTRA_wil);
         s = Integer.parseInt(inte);
 
         s+= 4;
-        st = String.valueOf(s);
+        inte = String.valueOf(s);
         qNine.putExtra(EXTRA_NAME,name);
         qNine.putExtra(EXTRA_DATE,date);
         qNine.putExtra(EXTRA_cha,cha);
@@ -101,16 +101,16 @@ public class quizNine extends ActionBarActivity {
         Intent qNine = new Intent(this,quizTen.class);
         int s;
 
-        String st = intent.getStringExtra(quizNine.EXTRA_STR);
-        String name = intent.getStringExtra(quizNine.EXTRA_NAME);
-        String date = intent.getStringExtra(quizNine.EXTRA_DATE);
-        String cha = intent.getStringExtra(quizNine.EXTRA_cha);
-        String inte = intent.getStringExtra(quizNine.EXTRA_inte);
-        String wil = intent.getStringExtra(quizNine.EXTRA_wil);
+        String st = intent.getStringExtra(quizEight.EXTRA_STR);
+        String name = intent.getStringExtra(quizEight.EXTRA_NAME);
+        String date = intent.getStringExtra(quizEight.EXTRA_DATE);
+        String cha = intent.getStringExtra(quizEight.EXTRA_cha);
+        String inte = intent.getStringExtra(quizEight.EXTRA_inte);
+        String wil = intent.getStringExtra(quizEight.EXTRA_wil);
         s = Integer.parseInt(wil);
 
         s+= 4;
-        st = String.valueOf(s);
+        wil = String.valueOf(s);
         qNine.putExtra(EXTRA_NAME,name);
         qNine.putExtra(EXTRA_DATE,date);
         qNine.putExtra(EXTRA_cha,cha);
@@ -126,16 +126,16 @@ public class quizNine extends ActionBarActivity {
         Intent qNine = new Intent(this,quizTen.class);
         int s;
 
-        String st = intent.getStringExtra(quizNine.EXTRA_STR);
-        String name = intent.getStringExtra(quizNine.EXTRA_NAME);
-        String date = intent.getStringExtra(quizNine.EXTRA_DATE);
-        String cha = intent.getStringExtra(quizNine.EXTRA_cha);
-        String inte = intent.getStringExtra(quizNine.EXTRA_inte);
-        String wil = intent.getStringExtra(quizNine.EXTRA_wil);
+        String st = intent.getStringExtra(quizEight.EXTRA_STR);
+        String name = intent.getStringExtra(quizEight.EXTRA_NAME);
+        String date = intent.getStringExtra(quizEight.EXTRA_DATE);
+        String cha = intent.getStringExtra(quizEight.EXTRA_cha);
+        String inte = intent.getStringExtra(quizEight.EXTRA_inte);
+        String wil = intent.getStringExtra(quizEight.EXTRA_wil);
         s = Integer.parseInt(cha);
 
         s+= 4;
-        st = String.valueOf(s);
+        cha = String.valueOf(s);
         qNine.putExtra(EXTRA_NAME,name);
         qNine.putExtra(EXTRA_DATE,date);
         qNine.putExtra(EXTRA_cha,cha);
