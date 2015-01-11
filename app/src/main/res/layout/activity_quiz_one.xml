@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="bada.successtherealliferpg.quizOne">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scenario: You attempt to install a smartphone app; however, your device runs into an error and the install was unsuccessful. You continue to attempt various things but your smartphone remains unmoved. You react by:"
+        android:id="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:textColor="#ffff0002"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giving up in frustration, you realize you can do other things in life than spending time with technology."
+        android:id="@+id/q1a"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#ff000000"
+        android:onClick="aClick"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search the web for a solution. It&apos;s a popular app, so there is probably an easy fix."
+        android:id="@+id/q1b"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff000000"
+        android:onClick="bClick"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue to attempt to install the app. It&apos;s possible that a simple setting isn&apos;t allowing the installation."
+        android:id="@+id/q1c"
+        android:layout_below="@+id/q1b"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#ff000000"
+        android:onClick="cClick"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convince a friend you know to get the app installed. People find your charm convincing."
+        android:id="@+id/q1d"
+        android:layout_below="@+id/q1c"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#ff000000"
+        android:onClick="dClick"/>
+</RelativeLayout>

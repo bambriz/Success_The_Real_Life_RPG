@@ -33,6 +33,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="bada.successtherealliferpg.getName" />
         </activity>
+        <activity
+            android:name=".instructions"
+            android:label="@string/title_activity_instructions"
+            android:parentActivityName=".getName" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bada.successtherealliferpg.getName" />
+        </activity>
+        <activity
+            android:name=".quizOne"
+            android:label="@string/title_activity_quiz_one"
+            android:parentActivityName=".instructions" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bada.successtherealliferpg.instructions" />
+        </activity>
     </application>
 
 </manifest>

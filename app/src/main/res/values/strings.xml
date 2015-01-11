@@ -9,5 +9,8 @@
     <string name="NameHint">Name</string>
     <string name="DOB">Date of birth</string>
     <string name="title_activity_set_accomplishments">Set Accomplishments</string>
+    <string name="title_activity_instructions">Instructions</string>
+    <string name="instrubut">Ok</string>
+    <string name="title_activity_quiz_one">Question 1</string>
 
 </resources>

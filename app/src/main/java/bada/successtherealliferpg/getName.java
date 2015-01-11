@@ -45,13 +45,14 @@ public class getName extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
     public void getNameContinue(View view){
-        Intent setAintent = new Intent(this, setAccomplishments.class);
+        Intent setAintent = new Intent(this, instructions.class);
         EditText etName = (EditText) findViewById(R.id.getNameName);
         EditText etDate = (EditText) findViewById(R.id.getNameDOB);
         String name = etName.getText().toString();
         String date = etDate.getText().toString();
         setAintent.putExtra(EXTRA_NAME, name);
         setAintent.putExtra(EXTRA_DATE, date);
+        // waits for a valid value for date and name before you can proceed
         if (!name.equals("") && !date.equals("") && !name.equals("Name") && !date.equals("Date of birth")) {
             startActivity(setAintent); //j
         }
