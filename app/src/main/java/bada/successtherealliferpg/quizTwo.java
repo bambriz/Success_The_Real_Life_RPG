@@ -106,12 +106,12 @@ public class quizTwo extends ActionBarActivity {
         String cha = intent.getStringExtra(quizTwo.EXTRA_cha);
         String inte = intent.getStringExtra(quizTwo.EXTRA_inte);
         String wil = intent.getStringExtra(quizTwo.EXTRA_wil);
-        s = Integer.parseInt(inte);
+        s = Integer.parseInt(cha);
 
         // i = saveData.getInt("intelligence",10);
         // w = saveData.getInt("willpower",10);
         s+= 4;
-        inte = String.valueOf(s);
+        cha = String.valueOf(s);
         qTwo.putExtra(EXTRA_NAME,name);
         qTwo.putExtra(EXTRA_DATE,date);
         qTwo.putExtra(EXTRA_cha,cha);
@@ -133,12 +133,12 @@ public class quizTwo extends ActionBarActivity {
         String cha = intent.getStringExtra(quizTwo.EXTRA_cha);
         String inte = intent.getStringExtra(quizTwo.EXTRA_inte);
         String wil = intent.getStringExtra(quizTwo.EXTRA_wil);
-        s = Integer.parseInt(wil);
+        s = Integer.parseInt(inte);
 
         // i = saveData.getInt("intelligence",10);
         // w = saveData.getInt("willpower",10);
         s+= 4;
-        wil = String.valueOf(s);
+        inte = String.valueOf(s);
         qTwo.putExtra(EXTRA_NAME,name);
         qTwo.putExtra(EXTRA_DATE,date);
         qTwo.putExtra(EXTRA_cha,cha);
@@ -159,12 +159,12 @@ public class quizTwo extends ActionBarActivity {
         String cha = intent.getStringExtra(quizTwo.EXTRA_cha);
         String inte = intent.getStringExtra(quizTwo.EXTRA_inte);
         String wil = intent.getStringExtra(quizTwo.EXTRA_wil);
-        s = Integer.parseInt(cha);
+        s = Integer.parseInt(wil);
 
         // i = saveData.getInt("intelligence",10);
         // w = saveData.getInt("willpower",10);
         s+= 4;
-        cha = String.valueOf(s);
+        wil = String.valueOf(s);
         qTwo.putExtra(EXTRA_NAME,name);
         qTwo.putExtra(EXTRA_DATE,date);
         qTwo.putExtra(EXTRA_cha,cha);

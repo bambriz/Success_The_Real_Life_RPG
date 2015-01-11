@@ -6,11 +6,60 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="bada.successtherealliferpg.quizThree">
 
-    <TextView android:text="sexy" android:layout_width="wrap_content"
+    <TextView android:text="Which of the following dream jobs is most appealing? Consider what is expected in each job. Assume that they all pay equally well." android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/"
-        android:textSize="40sp"
+        android:id="@+id/textView2"
+        android:textSize="15sp"
+        android:textColor="#ffff0002"
+        android:layout_marginTop="30dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A professional athlete."
+        android:id="@+id/q3a"
+        android:layout_marginTop="68dp"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="aClick" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A scientist or researcher."
+        android:id="@+id/q3b"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff000000"
+        android:onClick="bClick" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CEO of a fortune 500 company."
+        android:id="@+id/q3c"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/q3b"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="cClick" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" A high-level government official (a president, governor, ect.)."
+        android:id="@+id/q3d"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/q3c"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:onClick="dClick" />
 
 </RelativeLayout>

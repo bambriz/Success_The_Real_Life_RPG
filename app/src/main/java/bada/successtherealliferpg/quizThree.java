@@ -8,6 +8,13 @@ import android.view.MenuItem;
 
 public class quizThree extends ActionBarActivity {
 
+    public final static String EXTRA_NAME = "com.bada.successtherealliferpg.name";
+    public final static String EXTRA_DATE = "com.bada.successtherealliferpg.date";
+    public final static String EXTRA_STR = "com.bada.successtherealliferpg.str";
+    public final static String EXTRA_cha = "com.bada.successtherealliferpg.cha";
+    public final static String EXTRA_inte = "com.bada.successtherealliferpg.inte";
+    public final static String EXTRA_wil = "com.bada.successtherealliferpg.wil";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

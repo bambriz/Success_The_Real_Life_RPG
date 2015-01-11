@@ -12,11 +12,11 @@
         android:text="Scenario: You are mountain biking on a trail with some buddies, when your tires go flat. What do you do? "
         android:id="@+id/textView2"
         android:layout_marginTop="30dp"
-        android:layout_alignParentTop="true"
         android:textColor="#ffff0002"
         android:textSize="15sp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <CheckBox
         android:layout_width="wrap_content"
